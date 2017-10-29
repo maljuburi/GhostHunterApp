@@ -12,30 +12,30 @@
 
 
     <platform name="android">
-        <icon density="ldpi" src="../res/icon/android/mipmap-ldpi/ic_launcher.png" />
-        <icon density="mdpi" src="../res/icon/android/mipmap-mdpi/ic_launcher.png" />
-        <icon density="hdpi" src="../res/icon/android/mipmap-hdpi/ic_launcher.png" />
-        <icon density="xhdpi" src="../res/icon/android/mipmap-xhdpi/ic_launcher.png" />
-        <icon density="xxhdpi" src="../res/icon/android/mipmap-xxhdpi/ic_launcher.png" />
-        <icon density="xxxhdpi" src="../res/icon/android/mipmap-xxxhdpi/ic_launcher.png" />
+        <icon density="ldpi" src="res/icon/android/mipmap-ldpi/ic_launcher.png" />
+        <icon density="mdpi" src="res/icon/android/mipmap-mdpi/ic_launcher.png" />
+        <icon density="hdpi" src="res/icon/android/mipmap-hdpi/ic_launcher.png" />
+        <icon density="xhdpi" src="res/icon/android/mipmap-xhdpi/ic_launcher.png" />
+        <icon density="xxhdpi" src="res/icon/android/mipmap-xxhdpi/ic_launcher.png" />
+        <icon density="xxxhdpi" src="res/icon/android/mipmap-xxxhdpi/ic_launcher.png" />
     </platform>
     <platform name="ios">
-        <icon height="57" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-57x57@1x.png" width="57" />
-        <icon height="114" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-57x57@1x@2x.png" width="114" />
-        <icon height="40" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-40x40@1x.png" width="40" />
-        <icon height="80" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-40x40@2x.png" width="80" />
-        <icon height="50" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-50x50@1x.png" width="50" />
-        <icon height="100" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-50x50@2x.png" width="100" />
-        <icon height="60" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-60x60@1x.png" width="60" />
-        <icon height="120" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-60x60@2x.png" width="120" />
-        <icon height="180" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-60x60@3x.png" width="180" />
-        <icon height="72" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-72x72@1x.png" width="72" />
-        <icon height="144" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-72x72@2x.png" width="144" />
-        <icon height="76" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-76x76@1x.png" width="76" />
-        <icon height="152" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-72x72@2x.png" width="152" />
-        <icon height="29" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-29x29@1x.png" width="29" />
-        <icon height="58" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-29x29@2x.png" width="58" />
-        <icon height="87" platform="ios" src="../res/icon/ios/AppIcon.appiconset/Icon-App-29x29@3x.png" width="87" />
+        <icon height="57" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-57x57@1x.png" width="57" />
+        <icon height="114" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-57x57@1x@2x.png" width="114" />
+        <icon height="40" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-40x40@1x.png" width="40" />
+        <icon height="80" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-40x40@2x.png" width="80" />
+        <icon height="50" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-50x50@1x.png" width="50" />
+        <icon height="100" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-50x50@2x.png" width="100" />
+        <icon height="60" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-60x60@1x.png" width="60" />
+        <icon height="120" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-60x60@2x.png" width="120" />
+        <icon height="180" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-60x60@3x.png" width="180" />
+        <icon height="72" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-72x72@1x.png" width="72" />
+        <icon height="144" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-72x72@2x.png" width="144" />
+        <icon height="76" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-76x76@1x.png" width="76" />
+        <icon height="152" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-72x72@2x.png" width="152" />
+        <icon height="29" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-29x29@1x.png" width="29" />
+        <icon height="58" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-29x29@2x.png" width="58" />
+        <icon height="87" platform="ios" src="res/icon/ios/AppIcon.appiconset/Icon-App-29x29@3x.png" width="87" />
     </platform>
 
     <access origin="*" />
