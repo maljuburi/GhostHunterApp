@@ -1,0 +1,11 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "Ghost Hunter",
+  "short_name": "Ghost Hunter",
+  "version": "com.maljuburi.apps.hunter",
+  "description": "Ghost Hunter App",
+  "author": "Muhammad Al Juburi",
+  "icons": [],
+  "start_url": "index.html"
+}
