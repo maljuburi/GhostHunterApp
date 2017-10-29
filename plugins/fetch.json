@@ -1,0 +1,21 @@
+{
+  "cordova-plugin-camera": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-camera"
+    },
+    "is_top_level": true,
+    "variables": {
+      "CAMERA_USAGE_DESCRIPTION": "Access camera to hunt ghost",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": "Access your ghost library"
+    }
+  },
+  "cordova-plugin-flashlight": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-flashlight"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
