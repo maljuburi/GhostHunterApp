@@ -77,5 +77,4 @@
     </plugin>
     <plugin name="cordova-plugin-flashlight" spec="^3.2.0" />
     <plugin name="cordova-plugin-device-orientation" spec="^1.0.7" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.2.2" />
 </widget>
