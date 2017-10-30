@@ -46,19 +46,12 @@
 
     function onDeviceReady() {
 
-      // navigator.compass.getCurrentHeading(compassSuccess, compassError);
+      
 
-      // function compassSuccess(heading) {
-      //   console.log(heading.magneticHeading);
-      //     var hvalue = heading.magneticHeading;
-      //     document.getElementById("nav").innerHTML = hvalue;
-      //     document.getElementById("compass").style.transform = "rotate("+hvalue+"deg)";
 
-      //   };
-
-      //   function compassError(error) {
-      //     alert('CompassError: ' + error.code);
-      //   };
+      // ===============
+      // Compass
+      // ==============
 
       var watchcompass = navigator.compass.watchHeading(onSuccess, onError, options);
 
@@ -66,6 +59,7 @@
         var hvalue = Math.round(heading.magneticHeading);
         document.getElementById("nav").innerHTML = hvalue;
         document.getElementById("compass").style.transform = "rotate(" + (-hvalue) + "deg)";
+        document.getElementById("compass").style.webkitTransform = "rotate(" + (-hvalue) + "deg)";
       };
 
       function onError(compassError) {
