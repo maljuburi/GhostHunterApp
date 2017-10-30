@@ -17,6 +17,7 @@ body {
   height: 100%;
   background: #131313;
   font-family: 'ghost-font', cursive;
+  letter-spacing: 0.1em;
   color: red;
 }
 
@@ -27,8 +28,6 @@ body {
 .text-shadow {
   text-shadow: 0 0 10px black;
 }
-
-
 
 
 /*==========================================
@@ -72,9 +71,8 @@ Camera Page
 .compass {
   display: block;
   position: relative;
-   height: 220px;
+  height: 220px;
 }
-
 
 .cam img:nth-of-type(1) {
   z-index: 5;
@@ -102,14 +100,30 @@ Camera Page
   width: 180px;
 }
 
-.myImage{
-  display: block;
-  width: 80%;
-  height: auto;
+.myimg-container {
+  position: relative;
+  background-color: rgb(33, 33, 33);
+  overflow: hidden;
+  width: 90%;
   margin: 0 auto;
   box-shadow: 0 0 10px black;
   border-radius: 10px;
+   padding: 0.5em;
 }
+
+.myImage {
+  display: block;
+  width: 100%;
+}
+
+.ghostimg {
+  position: absolute;
+  opacity: 0.7;
+  width: 30%;
+  bottom: 0;
+  right: 5%;
+}
+
 
 /*==========================================
 ###############################################
@@ -146,7 +160,6 @@ Compass Page
   box-shadow: 0 0 20px black;
   transform: rotate(0deg);
   -webkit-transform: rotate(0);
-
 }
 
 
@@ -158,10 +171,10 @@ Compass Page
 
 .eye {
   height: 30px;
-  width: 80px;
+  width: 120px;
   background: red;
   position: absolute;
-  left: 51%;
+  left: 50%;
   top: 40%;
   box-shadow: 0px 0px 20px red;
   -webkit-transform: translateZ(0);
@@ -174,13 +187,14 @@ Compass Page
   border-radius: 5% 75% 0 100%;
   -webkit-transform: rotate(10deg);
   transform: rotate(10deg);
-  margin-left: -100px;
+  margin-left: -140px;
 }
 
 .eye:nth-of-type(2) {
   border-radius: 75% 5% 100% 0;
   -webkit-transform: rotate(-10deg);
   transform: rotate(-10deg);
+  margin-left: 20px;
 }
 
 @-webkit-keyframes glow {
@@ -257,15 +271,15 @@ Compass Page
   padding: 1em 0;
 }
 
+
 .demon {
   height: 250px;
   position: relative;
-  margin: 3em 0;
 }
 
 .loader-ring {
-  width: 250px;
-  height: 250px;
+  width: 30px;
+  height: 30px;
   position: relative;
   margin: 0 auto;
 }
@@ -275,22 +289,10 @@ Compass Page
   height: 100%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  -webkit-box-shadow: 0 4px 0 red inset;
-  box-shadow: 0 4px 0 red inset;
+  -webkit-box-shadow: 0 1px 0 red inset;
+  box-shadow: 0 1px 0 red inset;
   -webkit-animation: rotate-360 2s linear infinite;
   animation: rotate-360 2s linear infinite;
-}
-
-.loader-ring-track {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
-  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3) inset;
 }
 
 @keyframes rotate-360 {
@@ -316,8 +318,6 @@ Compass Page
 }
 
 
-
-
 /*==============
   Loading Text
 =================*/
@@ -340,6 +340,7 @@ Compass Page
     opacity: 0.1;
   }
 }
+
 @-webkit-keyframes loading {
   0% {
     opacity: 0.1;
@@ -351,4 +352,3 @@ Compass Page
     opacity: 0.1;
   }
 }
-

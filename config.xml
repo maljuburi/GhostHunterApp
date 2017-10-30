@@ -71,7 +71,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <gap:plugin name="cordova-plugin-flashlight" source="npm" />
-    <engine name="browser" spec="^5.0.1" />
     <plugin name="cordova-plugin-camera" spec="^2.4.1">
         <variable name="CAMERA_USAGE_DESCRIPTION" value="Access camera to hunt ghost" />
         <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value="Access your ghost library" />

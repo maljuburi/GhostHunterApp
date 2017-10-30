@@ -25,7 +25,8 @@ function onDeviceReady() {
     function onSuccess(imageURI) {
       var image = document.getElementById('myImage');
       image.src = imageURI;
-      image.style.display = "block";
+
+      document.getElementById("imgContainer").style.display = "block";
     }
 
     function onFail(message) {

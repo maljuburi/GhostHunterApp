@@ -10,7 +10,6 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-browser": "^5.0.1",
     "cordova-plugin-camera": "^2.4.1",
     "cordova-plugin-compat": "^1.2.0",
     "cordova-plugin-device-orientation": "^1.0.7",
@@ -27,8 +26,6 @@
       "cordova-plugin-device-orientation": {},
       "cordova-plugin-whitelist": {}
     },
-    "platforms": [
-      "browser"
-    ]
+    "platforms": []
   }
 }

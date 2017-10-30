@@ -8,7 +8,8 @@
   <meta name="msapplication-tap-highlight" content="no" />
   <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 
-  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+  <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *"
+  />
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
   <title>Hunter</title>
 </head>
@@ -21,38 +22,37 @@
   <!-- ====================== -->
 
 
-<div class="welcome text-shadow">
-  <h1 class="center">Ghost Hunting</h1>
-  <p class="center">version 1.0</p>
-</div><br>
+  <div class="welcome text-shadow">
+    <h1 class="center">Ghost Hunting</h1>
+    <p class="center">version 1.0</p>
+  </div>
+  <br>
 
   <div class="demon">
     <div class="eye"></div>
     <div class="eye"></div>
-    <div class='loader-ring'>
-      <div class='loader-ring-light'></div>
-      <div class='loader-ring-track'></div>
-    </div>
   </div>
-
-  
 
   <div class="loading">
+    <div class='loader-ring'>
+      <div class='loader-ring-light'></div>
+    </div>
     <h3>Loading</h3>
   </div>
+
+
 
   <script type="text/javascript" src="cordova.js"></script>
   <script type="text/javascript" src="lib/jquery.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <script>
-        $(document).ready(function(){
+    $(document).ready(function(){
 
-            setTimeout(function() {
-                window.location.href = "content.html";
-            }, 3000);
-        });
-
-    </script>
+        setTimeout(function() {
+            window.location.href = "content.html";
+        }, 3000);
+    });
+  </script>
 </body>
 
 </html>
