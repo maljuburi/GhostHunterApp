@@ -24,7 +24,7 @@
 
 ### Flash Page
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/flashoff.JPG" width="300" height="auto">
-<img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/flashoon.JPG" width="300" height="auto">
+<img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/flashon.JPG" width="300" height="auto">
 
 ### Camera Page
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/camera.JPG" width="300" height="auto">
