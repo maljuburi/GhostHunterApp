@@ -1,5 +1,5 @@
 # Hybrid Mobile App
-### The application is Coded using:
+### The application is coded using:
 * HTML5
 * CSS3
 * Javascript
@@ -15,4 +15,5 @@
 # The idea of the app is to hunt a ghost for the Halloween
 ### Camera Screen Shot
 
-![Ghost Camera](https://drive.google.com/file/d/0BziiN5Xe4Jo-SmtqQ0hmX0VuNDg/view?usp=sharing "Ghost Camera")
+![Ghost Camera](https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/camera.JPG "Ghost Camera")
+![Ghost Photo](https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/photo.JPG "Ghost Photo")
