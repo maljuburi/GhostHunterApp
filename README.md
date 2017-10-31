@@ -13,15 +13,15 @@
 
 
 # The idea of the app is to hunt a ghost for the Halloween
-###* Loading Page
+### Loading Page
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/loading.JPG" width="300" height="auto">
-###* Front Page
+### Front Page
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/font.JPG" width="300" height="auto">
-###* Compass Page
+### Compass Page
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/compass.JPG" width="300" height="auto">
-###* Flash Page
+### Flash Page
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/flashoff.JPG" width="300" height="auto">
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/flashoon.JPG" width="300" height="auto">
-###* Camera Page
+### Camera Page
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/camera.JPG" width="300" height="auto">
 <img src="https://github.com/maljuburi/screenshots/blob/master/GhostHunterApp/photo.JPG" width="300" height="auto">
