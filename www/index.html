@@ -21,23 +21,111 @@
   <!-- Splash Screen -->
   <!-- ====================== -->
 
-
-  <div class="welcome text-shadow">
-    <h1 class="center">Ghost Hunting</h1>
-    <p class="center">version 1.0</p>
-  </div>
-  <br>
-
-  <div class="demon">
-    <div class="eye"></div>
-    <div class="eye"></div>
-  </div>
-
-  <div class="loading">
-    <div class='loader-ring'>
-      <div class='loader-ring-light'></div>
+  <div class="splash-page">
+    <div class="welcome text-shadow">
+      <h1 class="center">Ghost Hunting</h1>
+      <p class="center">version 1.0</p>
     </div>
-    <h3>Loading</h3>
+    <br>
+
+    <div class="demon">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+
+    <div class="loading">
+      <div class='loader-ring'>
+        <div class='loader-ring-light'></div>
+      </div>
+      <h3>Loading</h3>
+    </div>
+  </div>
+
+
+  <!-- Welcome Page -->
+  <!-- ====================== -->
+  <div class="welcome-page">
+    <br>
+    <div class="center text-shadow">
+      <h1>Welcome to the world of Paranormal</h1>
+      <br>
+      <p>Let's go hunting !</p>
+    </div>
+    <br>
+    <div class="pages-links">
+      <button id="compassbtn" class="btn" type="button" name="compass">Compass</button>
+      <button id="flashbtn" class="btn" type="button" name="flash">Flash</button>
+      <button id="camerabtn" class="btn" type="button" name="camera">Camera</button>
+    </div>
+  </div>
+
+
+  <!-- Compass Page -->
+  <!-- ====================== -->
+  <div class="compass-page">
+    <br>
+    <div class="center text-shadow">
+      <h1>Compass</h1>
+      <p>The right direction helps you find the ghost</p>
+    </div>
+    <br>
+
+    <div class="compass">
+      <img id="compass" src="img/compass.png" alt="Compass Image">
+    </div>
+    <br>
+
+    <h1 class="center" id="nav"></h1>
+
+    <button id="compassback" class="btn" type="button" name="back">Go Back</button>
+  </div>
+
+
+  <!-- Flash Page -->
+  <!-- ====================== -->
+  <div class="flash-page">
+    <br>
+    <div class="center text-shadow">
+      <h1>Flash</h1>
+      <p>Press the skull to turn on the torch</p>
+    </div>
+    <br>
+
+    <div class="flash">
+      <img id="off" src="img/flashoff.png" alt="flash is off">
+      <img id="on" src="img/flashon.png" alt="flash is on" hidden>
+    </div>
+    <br>
+
+    <button id="flashback" class="btn" type="button" name="back">Go Back</button>
+  </div>
+
+
+
+  <!-- Camera Page -->
+  <!-- ====================== -->
+  <div class="camera-page">
+    <br>
+    <div class="center text-shadow">
+      <h1>Camera</h1>
+      <p>Press on the camera below, and take a photo</p>
+    </div>
+    <br>
+
+    <div class="cam">
+      <img id="camera" src="img/camlens.png" alt="camlens">
+      <img src="img/gcam.gif" alt="cam">
+    </div>
+    <br>
+
+    <div id="imgContainer" class="myimg-container" hidden>
+      <img class="myImage" id="myImage">
+      <img src="img/ghost1.png" class="ghostimg" id="ghostimg" alt="ghost">
+    </div>
+
+
+    <button id="cameraback" class="btn" type="button" name="back">Go Back</button>
+    <button class="btn" id="getphoto" type="button" name="back">Get photo</button>
   </div>
 
 
@@ -46,12 +134,7 @@
   <script type="text/javascript" src="lib/jquery.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <script>
-    $(document).ready(function(){
-
-        setTimeout(function() {
-            window.location.href = "content.html";
-        }, 3000);
-    });
+    
   </script>
 </body>
 

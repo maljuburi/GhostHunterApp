@@ -1,3 +1,44 @@
+$(document).ready(function () {
+
+  setTimeout(function () {
+    $(".splash-page").fadeOut();
+    $(".welcome-page").delay(300).fadeIn();
+  }, 3000);
+
+
+  // Navigation Buttons
+  // =======================
+  $("#compassbtn").on('click', function () {
+    $(".welcome-page").fadeOut();
+    $(".compass-page").delay(500).fadeIn();
+  });
+  $("#flashbtn").on('click', function () {
+    $(".welcome-page").fadeOut();
+    $(".flash-page").delay(500).fadeIn();
+  });
+  $("#camerabtn").on('click', function () {
+    $(".welcome-page").fadeOut();
+    $(".camera-page").delay(500).fadeIn();
+  });
+
+  // Go Back Buttons
+  // ===================
+
+  $("#compassback").on('click', function () {
+    $(".compass-page").fadeOut();
+    $(".welcome-page").delay(500).fadeIn();
+  });
+  $("#flashback").on('click', function () {
+    $(".flash-page").fadeOut();
+    $(".welcome-page").delay(500).fadeIn();
+  });
+  $("#cameraback").on('click', function () {
+    $(".camera-page").fadeOut();
+    $(".welcome-page").delay(500).fadeIn();
+  });
+
+});
+
 document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
@@ -5,10 +46,31 @@ function onDeviceReady() {
 
   // Background Audio
   // ============
-  // var audio = new Audio("../audio/halloween.mp3");
-  // audio.loop = true;
-  // audio.play();
+  var audio = new Audio("../audio/halloween.mp3");
+  audio.loop = true;
+  audio.play();
 
+
+  // ===============
+  // Compass
+  // ==============
+
+  var watchcompass = navigator.compass.watchHeading(onCompassSuccess, onCompassError, options);
+
+  function onCompassSuccess(heading) {
+    var hvalue = Math.round(heading.magneticHeading);
+    document.getElementById("nav").innerHTML = hvalue;
+    document.getElementById("compass").style.transform = "rotate(" + (-hvalue) + "deg)";
+    document.getElementById("compass").style.webkitTransform = "rotate(" + (-hvalue) + "deg)";
+  };
+
+  function onCompassError(compassError) {
+    alert('Compass error: ' + compassError.code);
+  };
+
+  var options = {
+    frequency: 3000
+  };
 
   // Flash Torch
   // ============
@@ -52,10 +114,6 @@ function onDeviceReady() {
   }
 
 
-
-
-
-
   function getphoto() {
     navigator.camera.getPicture(ongetSuccess, ongetFail, {
       destinationType: Camera.DestinationType.FILE_URI,
@@ -78,29 +136,5 @@ function onDeviceReady() {
   }
 
 
-  // function setOptions(srcType) {
-  //   var options = {
-  //     // Some common settings are 20, 50, and 100
-  //     quality: 50,
-  //     destinationType: Camera.DestinationType.FILE_URI,
-  //     // In this app, dynamically set the picture source, Camera or photo gallery
-  //     sourceType: srcType,
-  //     encodingType: Camera.EncodingType.JPEG,
-  //     mediaType: Camera.MediaType.PICTURE,
-  //     allowEdit: true,
-  //     correctOrientation: true //Corrects Android orientation quirks
-  //   }
-  //   return options;
-  // }
-
-
-  // ===========================
-
-
-
-
 }
 
-function redirect(page) {
-  window.location.href = page;
-}

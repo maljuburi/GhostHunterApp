@@ -21,6 +21,14 @@ body {
   color: red;
 }
 
+
+.welcome-page,
+.compass-page,
+.flash-page,
+.camera-page{
+  display: none;
+}
+
 .center {
   text-align: center;
 }
