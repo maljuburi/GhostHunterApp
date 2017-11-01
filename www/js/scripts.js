@@ -8,7 +8,7 @@ function onDeviceReady() {
   // var audio = new Audio("../audio/halloween.mp3");
   // audio.loop = true;
   // audio.play();
-  
+
 
   // Flash Torch
   // ============
@@ -28,24 +28,25 @@ function onDeviceReady() {
   // Camera Plugin
   // ============
   $("#camera").on('click', takephoto);
+  $("#getphoto").on('click', getphoto);
 
   function takephoto() {
-    navigator.camera.getPicture(onSuccess, onFail, {
+    navigator.camera.getPicture(ontakeSuccess, ontakeFail, {
       quality: 50,
       destinationType: Camera.DestinationType.FILE_URI,
       encodingType: Camera.EncodingType.JPEG,
       correctOrientation: true
     });
 
-    function onSuccess(imageURI) {
+    function ontakeSuccess(imageURI) {
       var image = document.getElementById('myImage');
       image.src = imageURI;
 
       document.getElementById("imgContainer").style.display = "block";
     }
 
-    function onFail(message) {
-      
+    function ontakeFail(message) {
+
       alert('Failed because: ' + message);
     }
   }
@@ -54,7 +55,46 @@ function onDeviceReady() {
 
 
 
-// ===========================
+
+  function getphoto() {
+    navigator.camera.getPicture(ongetSuccess, ongetFail, {
+      destinationType: Camera.DestinationType.FILE_URI,
+      sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+      popoverOptions: new CameraPopoverOptions(300, 300, 100, 100, Camera.PopoverArrowDirection.ARROW_ANY),
+      correctOrientation: true
+    });
+
+    function ongetSuccess(imageURI) {
+      var image = document.getElementById('myImage');
+      image.src = imageURI;
+
+      document.getElementById("imgContainer").style.display = "block";
+    }
+
+    function ongetFail(message) {
+
+      alert('Failed because: ' + message);
+    }
+  }
+
+
+  // function setOptions(srcType) {
+  //   var options = {
+  //     // Some common settings are 20, 50, and 100
+  //     quality: 50,
+  //     destinationType: Camera.DestinationType.FILE_URI,
+  //     // In this app, dynamically set the picture source, Camera or photo gallery
+  //     sourceType: srcType,
+  //     encodingType: Camera.EncodingType.JPEG,
+  //     mediaType: Camera.MediaType.PICTURE,
+  //     allowEdit: true,
+  //     correctOrientation: true //Corrects Android orientation quirks
+  //   }
+  //   return options;
+  // }
+
+
+  // ===========================
 
 
 
