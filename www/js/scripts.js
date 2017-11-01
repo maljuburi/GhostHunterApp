@@ -2,8 +2,8 @@ $(document).ready(function () {
 
   // Background Audio
   // ============
-  // var media = new Media('../audio/halloween.mp3', audioSuccess, audioError)
-  // media.startRecord();
+  var media = new Media('../audio/halloween.mp3', audioSuccess, audioError)
+  media.startRecord();
 
 
 
@@ -54,9 +54,9 @@ function onDeviceReady() {
 
 
 
-  var audio = new Audio("../audio/halloween.mp3");
-  audio.loop = true;
-  audio.play();
+  // var audio = new Audio("../audio/halloween.mp3");
+  // audio.loop = true;
+  // audio.play();
 
   // ===============
   // Compass
