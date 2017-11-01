@@ -56,7 +56,6 @@ function onDeviceReady() {
     var media = new Media(audiosrc, audioSuccess, audioError);
     
     function audioSuccess() {
-      console.log("playing");
       media.play();
     }
   
