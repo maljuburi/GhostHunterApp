@@ -56,18 +56,14 @@ function onDeviceReady() {
     var media = new Media(audiosrc, audioSuccess, audioError);
     
     function audioSuccess() {
-      media.play({
-        numberOfLoops: 1
-      });
+      media.play();
     }
   
-    function audioError() {
-      alert('Audio failed to play');
+    function audioError(err) {
+      alert('Audio failed to play'+err);
     }
 
-    media.play({
-      numberOfLoops: 1
-    });
+    media.play();
 
 
 
