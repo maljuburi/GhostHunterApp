@@ -2,9 +2,12 @@ $(document).ready(function () {
 
   // Background Audio
   // ============
-  var audio = new Audio("../audio/halloween.mp3");
-  audio.loop = true;
-  audio.play();
+  // var media = new Media('../audio/halloween.mp3', audioSuccess, audioError)
+  // media.startRecord();
+
+
+
+
 
   setTimeout(function () {
     $(".splash-page").fadeOut(100);
@@ -50,8 +53,10 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 
 
-  
 
+  var audio = new Audio("../audio/halloween.mp3");
+  audio.loop = true;
+  audio.play();
 
   // ===============
   // Compass
@@ -139,4 +144,3 @@ function onDeviceReady() {
 
 
 }
-
