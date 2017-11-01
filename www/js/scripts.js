@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+  // Background Audio
+  // ============
+  var audio = new Audio("../audio/halloween.mp3");
+  audio.loop = true;
+  audio.play();
+
   setTimeout(function () {
     $(".splash-page").fadeOut();
     $(".welcome-page").delay(300).fadeIn();
@@ -44,11 +50,7 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 
 
-  // Background Audio
-  // ============
-  var audio = new Audio("../audio/halloween.mp3");
-  audio.loop = true;
-  audio.play();
+  
 
 
   // ===============
