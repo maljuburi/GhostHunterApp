@@ -7,7 +7,7 @@ $(document).ready(function () {
   audio.play();
 
   setTimeout(function () {
-    $(".splash-page").fadeOut();
+    $(".splash-page").fadeOut(100);
     $(".welcome-page").delay(300).fadeIn();
   }, 3000);
 
@@ -15,32 +15,32 @@ $(document).ready(function () {
   // Navigation Buttons
   // =======================
   $("#compassbtn").on('click', function () {
-    $(".welcome-page").fadeOut();
-    $(".compass-page").delay(500).fadeIn();
+    $(".welcome-page").fadeOut(100);
+    $(".compass-page").delay(300).fadeIn();
   });
   $("#flashbtn").on('click', function () {
-    $(".welcome-page").fadeOut();
-    $(".flash-page").delay(500).fadeIn();
+    $(".welcome-page").fadeOut(100);
+    $(".flash-page").delay(300).fadeIn();
   });
   $("#camerabtn").on('click', function () {
-    $(".welcome-page").fadeOut();
-    $(".camera-page").delay(500).fadeIn();
+    $(".welcome-page").fadeOut(100);
+    $(".camera-page").delay(300).fadeIn();
   });
 
   // Go Back Buttons
   // ===================
 
   $("#compassback").on('click', function () {
-    $(".compass-page").fadeOut();
-    $(".welcome-page").delay(500).fadeIn();
+    $(".compass-page").fadeOut(100);
+    $(".welcome-page").delay(300).fadeIn();
   });
   $("#flashback").on('click', function () {
-    $(".flash-page").fadeOut();
-    $(".welcome-page").delay(500).fadeIn();
+    $(".flash-page").fadeOut(100);
+    $(".welcome-page").delay(300).fadeIn();
   });
   $("#cameraback").on('click', function () {
-    $(".camera-page").fadeOut();
-    $(".welcome-page").delay(500).fadeIn();
+    $(".camera-page").fadeOut(100);
+    $(".welcome-page").delay(300).fadeIn();
   });
 
 });

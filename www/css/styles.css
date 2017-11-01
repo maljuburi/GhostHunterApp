@@ -27,6 +27,7 @@ body {
 .flash-page,
 .camera-page{
   display: none;
+  padding: 0 0.5em;
 }
 
 .center {
