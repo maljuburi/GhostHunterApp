@@ -1,10 +1,6 @@
 $(document).ready(function () {
 
-  // Background Audio
-  // ============
-  var media = new Media('../audio/halloween.mp3', audioSuccess, audioError)
-  media.startRecord();
-
+  
 
 
 
@@ -53,10 +49,27 @@ document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
 
 
+  // Background Audio
+  // ============
+    
+    var audiosrc = "../audio/halloween.mp3";
+    var media = new Media(audiosrc, audioSuccess, audioError);
+    
+    function audioSuccess() {
+      console.log("playing");
+      media.play();
+    }
+  
+    function audioError() {
+      alert('Audio failed to play');
+    }
 
-  // var audio = new Audio("../audio/halloween.mp3");
-  // audio.loop = true;
-  // audio.play();
+    media.play();
+
+
+
+
+
 
   // ===============
   // Compass
