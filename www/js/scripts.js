@@ -52,7 +52,7 @@ function onDeviceReady() {
   // Background Audio
   // ============
     
-    var audiosrc = "../audio/halloween.mp3";
+  var audiosrc = "https://github.com/maljuburi/resources/blob/master/audio/halloween.mp3";
     var media = new Media(audiosrc, audioSuccess, audioError);
     
     function audioSuccess() {
