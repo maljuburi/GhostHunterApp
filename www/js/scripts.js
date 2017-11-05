@@ -53,19 +53,23 @@ function onDeviceReady() {
   // ============
     
 
-  var media = new Media("audio/halloween.wav", audioSuccess, audioError);
+  // var media = new Media("audio/halloween.wav", audioSuccess, audioError);
     
-    function audioSuccess() {
-      media.play();
-    }
+  //   function audioSuccess() {
+  //     media.play();
+  //   }
   
-    function audioError(err) {
-      alert('Audio failed to play'+err);
-    }
+  //   function audioError(err) {
+  //     alert('Audio failed to play'+err);
+  //   }
 
-    media.play();
+  //   media.play();
 
 
+
+  var bgaudio = new Audio ("../audio/halloween.wav");
+  bgaudio.loop = true;
+  bgaudio.play();
 
 
 
@@ -126,9 +130,8 @@ function onDeviceReady() {
       document.getElementById("imgContainer").style.display = "block";
     }
 
-    function ontakeFail(message) {
-
-      alert('Failed because: ' + message);
+    function ontakeFail() {
+      alert('No picture was taken!');
     }
   }
 
