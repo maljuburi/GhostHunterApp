@@ -49,7 +49,7 @@ function onDeviceReady() {
   // =================
     
 
-  var media = new Media("../audio/halloween.wav", audioSuccess, audioError);
+  var media = new Media("/audio/halloween.wav", audioSuccess, audioError);
     
     function audioSuccess() {
       media.play();
