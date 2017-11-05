@@ -1,9 +1,5 @@
 $(document).ready(function () {
-
-  
-
-
-
+ 
 
   setTimeout(function () {
     $(".splash-page").fadeOut(100);
@@ -50,26 +46,22 @@ function onDeviceReady() {
 
 
   // Background Audio
-  // ============
+  // =================
     
 
-  // var media = new Media("audio/halloween.wav", audioSuccess, audioError);
+  var media = new Media("/audio/halloween.wav", audioSuccess, audioError);
     
-  //   function audioSuccess() {
-  //     media.play();
-  //   }
+    function audioSuccess() {
+      media.play();
+    }
   
-  //   function audioError(err) {
-  //     alert('Audio failed to play'+err);
-  //   }
+    function audioError(err) {
+      alert('Audio failed to play'+err);
+    }
 
-  //   media.play();
+    media.play();
 
 
-
-  var bgaudio = new Audio ("../audio/halloween.wav");
-  bgaudio.loop = true;
-  bgaudio.play();
 
 
 
